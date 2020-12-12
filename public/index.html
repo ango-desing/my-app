@@ -1,43 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <title>ango</title>
+    <link rel="stylesheet" href="../src/estilo.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="icono ango.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+ 
+</head>
+<body>
+  <h2>Add React in One Minute</h2>
+  <p>This page demonstrates using React with no build tooling.</p>
+  <p>React is loaded as a script tag.</p>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <!-- We will put our React component inside this div. -->
+  <div id="like_button_container"></div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- Load our React component. -->
+  <script src="index.js"></script>
+
+      <div class="loader">
+        <div class="ring">
+      </div>
+      </div>
+      <section id="escritorio">
+        <nav>
+          <a href="index.html" class="logo">
+              <img src="https://res.cloudinary.com/angoooo/image/upload/v1605915278/kwmpsqi1bylvilakblfv.png" alt="">
+          </a>
+          <input type="checkbox" id="click">
+          <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul class="menu">
+              <li>
+                <a href="index.html" class="btn">inicio</a>
+              </li>
+              <li>
+                <a href="#" class="btn">folio</a>
+                  <ul id="submenu">
+                    <li><a href="ilustracion.html" class="btn">ilustracion</a></li>
+                    <li><a href="branding.html" class="btn">branding</a></li>
+                    <li><a href="web.html" class="btn">diseño web</a></li>
+                    <li><a href="fotografia.html" class="btn">fotografia creativa</a></li>
+                  </ul>
+              </li>
+              <li>
+                <a href="ilustracion.html" class="btn" id="especialidad">ilustracion</a>
+              </li>
+              <li>
+                <a href="branding.html" class="btn" id="especialidad">branding</a>
+              </li>
+              <li>
+                <a href="web.html" class="btn" id="especialidad">diseño web</a>
+              </li>
+              <li>
+                <a href="fotografia.html" class="btn" id="especialidad">fotografia creativa</a>
+              </li>
+              <li>
+                <a href="contacto.html" class="btn">contacto</a>
+              </li>
+          </ul>
+        </nav>
+       </section>
+       <main class="perfil-main">
+          <!--===== inicio =====-->
+            <section class="presentacion">
+              <div class="imagen-fondo">
+                <img src="https://res.cloudinary.com/angoooo/image/upload/v1606415470/mywyr1dpp4i74gu2tdvc.png" alt="">
+              </div>  
+            </section>
+        
+          <!--===== perfil =====-->
+           <section class="perfil">
+            <div class="about__container bd-grid">
+              <div class="about__img">
+                  <img src="https://res.cloudinary.com/angoooo/image/upload/v1606630617/jxx6w4afzkyoy5t36lnl.png" alt="">
+              </div>
+              <div class="caja-texto">
+                  <h2 class="about__subtitle">perfil</h2>
+                  <p class="about__text">Soy Angie Gonzalez estudiante de diseño web, soy una diseñadora gráfica y creativa visual, mi trabajo se centra en la creación de piezas gráficas conceptuales, enfocadas en medios impresos y digitales empleados en áreas como la  ilustración, fotografía artística y codificación de interfases para páginas web.
+                  <br>Disponible para proyectos de diseño, colaboraciones y encargos de arte.</p>
+              </div>
+            </div>
+           </section>    
+            <!--===== habilidades =====-->
+           <section class="habilidades">
+            <h1>habilidades</h1>
+            <hr class="linea">
+            <div class="habilidades-galeria">
+              <div class="galeria-habi">
+                <p class="subhabilidad">Fotografía <br> artística</p>
+                <img src="https://res.cloudinary.com/angoooo/image/upload/v1606630683/mcc6yyvzgrtoapoghfuk.png" class="habi">
+              </div>
+              <div class="galeria-habi">
+                <p class="subhabilidad">Procesos <br> conceptuales</p>
+              <img src="https://res.cloudinary.com/angoooo/image/upload/v1606630793/vcm5urg0ptnt9fi7xmdl.png" class="habi">
+              </div>
+              <div class="galeria-habi">
+                <p class="subhabilidad">Ilustración</p>
+                <img src="https://res.cloudinary.com/angoooo/image/upload/v1606630798/ffc6n9fteyxfqgestwnk.png" class="habi">
+              </div>
+              <div class="galeria-habi">
+                <p class="subhabilidad">Diseño de <br> interfases</p>
+                <img src="https://res.cloudinary.com/angoooo/image/upload/v1606630785/qrxyqnqfddelo8ich1up.png" class="habi">
+              </div>
+            </div>
+           </section> 
+            <!--===== conocimientos =====-->  
+           <section class="conocimientos">
+            <h1>conocimientos</h1>
+              <div class="row skills">
+              <div class="col-md-4">
+                <section>
+                  <p>Photoshop</p>
+                  <span ></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                </section>
+                <section>
+                  <p>Illustrator</p>
+                  <span ></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                </section>
+                <section>
+                  <p>Premiere pro</p>
+                  <span ></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                </section>
+                <section>
+                  <p>Audition</p>
+                  <span ></span>
+                  <span ></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                </section>
+                <section>
+                  <p>After Effects</p>
+                  <span ></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                </section>
+                <section>
+                  <p>Blender</p>
+                  <span ></span>
+                  <span ></span>
+                  <span ></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                </section>
+              </div>
+              <div class="col-md-4">
+                <section>
+                  <p>HTML</p>
+                  <span ></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                </section>
+                <section>
+                  <p>CSS</p>
+                  <span ></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                </section>
+                <section>
+                  <p>Javascript</p>
+                  <span ></span>
+                  <span ></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                </section>
+                <section>
+                  <p>SASS</p>
+                  <span ></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                </section>
+                <section>
+                  <p>PHP</p>
+                  <span ></span>
+                  <span ></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                  <span class="full"></span>
+                </section>
+            </div>
+           </section>
+      </main> 
+       <!--===== footer =====-->
+
+        <footer class="contacto">
+                <div class="contact-us">
+                    <h2 class="brand">www.angofolio.com</h2>
+                </div>
+                <div class="social-media">
+                    <a href="https://instagram.com/ango_eo?igshid=1arl1wpzsdcdr" class="social-media-icons">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://www.behance.net/angofolio" class="social-media-icons">
+                      <i class="fab fa-behance"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/angie-gonzalez-" class="social-media-icons">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+        </footer>
+
+ <script src="js/fondo.js"></script>
+    
+</body>
 </html>
